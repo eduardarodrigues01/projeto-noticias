@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
     <title>W. Notícias</title>
 </head>
-<body>
+<body class="escurecer">
     <header class="header-mobile">
         <img src="./assets/images/logo.svg" alt="Logo do site de notícias W.">
     
@@ -19,7 +20,11 @@
             <img src="./assets/images/icon-menu.svg" alt="ícone do menu hamburguer">
         </button>
 
-        <nav>
+        <nav class="abrir">
+
+            <button>
+                <img src="./assets/images/icon-menu-close.svg" alt="">
+            </button>
             <a href="Home"></a>
             <a href="Novo"></a>
             <a href="Popular"></a>
