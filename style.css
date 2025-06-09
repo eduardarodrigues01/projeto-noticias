@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,48 +6,49 @@
     -webkit-font-smoothing: antialiased;
 }
 
-:root {
-    --almost-white: #FFFDFA;
-    --dark-space-blue: #00001A;
-    --gunmetal: #5E607A;
-    --light-vermillion: #F15D51;
-    --yellow: #E9AA52;
+:root{
+    --almost-white: #fffdfa;
+    --dark-blue: #00001a;
+    --gunmetal: #5e607a;
+    --vermilion: #f15d51;
+    --yellow: #e9aa52;
     --silver: #C5C6CE;
+
 }
 
-body {
+body{
     padding: 1.75rem 1rem;
     background-color: var(--almost-white);
 }
 
-body.mescurecer::before {
+body.escurecer::before{
     content: "";
     position: fixed;
     height: 100vh;
     width: 100%;
-    background: rgba(0, 0, 26, 0.5);
+    background-color: rgb(0, 0, 26, 0.5);
     top: 0;
     left: 0;
 }
 
-header {
+header{
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     margin-bottom: 2rem;
 
     max-width: 1110px;
     margin-inline: auto;
 }
 
-header button {
+header button{
     border: none;
     background: none;
     width: fit-content;
     cursor: pointer;
 }
 
-header nav.mobile {
+header nav.mobile{
     position: fixed;
     background-color: var(--almost-white);
     right: -16rem;
@@ -55,7 +56,7 @@ header nav.mobile {
     height: 100vh;
     width: 16rem;
     z-index: 999;
-
+    
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
@@ -64,23 +65,23 @@ header nav.mobile {
     transition: 0.7s;
 }
 
-header nav.mobile.abrir {
+header nav.mobile.abrir{
     right: 0;
 }
 
-header nav button {
+header nav button{
     align-self: flex-end;
     margin-bottom: 4rem;
 }
 
-header .mobile a {
-     text-decoration: none;
-     color: var(--dark-space-blue);
-     font-size: 1.125rem;
-     line-height: 1.5rem;
+header .mobile a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 1.125rem;
+    line-height: 1.5rem;
 }
 
-header .desktop {
+header .desktop{
     display: none;
 }
 
@@ -89,19 +90,19 @@ main {
     margin-inline: auto;
 }
 
-.primeira-secao {
+.primeira-secao{
     margin-bottom: 4rem;
 }
 
-.primeira-secao img {
+.primeira-secao img{
     width: 100%;
     margin-bottom: 1.5rem;
 }
 
-.primeira-secao h1 {
+.primeira-secao h1{
     font-size: 2.5rem;
     line-height: 100%;
-    color: var(--dark-space-blue);
+    color: var(--dark-blue);
     margin-bottom: 1rem;
 }
 
@@ -112,31 +113,31 @@ main {
     margin-bottom: 1.5rem;
 }
 
-.primeira-secao button {
+.primeira-secao button{
     padding: 0.75rem 2rem;
-    background-color: var(--light-vermillion);
+    background-color: var(--vermilion);
     border: none;
     text-transform: uppercase;
     color: var(--almost-white);
     font-weight: 700;
     font-size: 0.875rem;
-    letter-spacing: 0.275rem;
+    letter-spacing: 0.25rem;
     line-height: 1.5rem;
 }
 
-.segunda-secao {
-    background-color: var(--dark-space-blue);
+.segunda-secao{
+    background-color: var(--dark-blue);
     margin-bottom: 4rem;
     padding: 1.5rem 1.1rem;
 }
 
-.margin-border-padding {
+.margin-border-padding{
     border-bottom: 1px solid var(--gunmetal);
-     margin-bottom: 1.5rem;
-      padding-bottom: 1.75rem;
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.75rem;
 }
 
-.segunda-secao h2 {
+.segunda-secao h2{
     color: var(--yellow);
     font-size: 2rem;
     line-height: 100%;
@@ -151,110 +152,109 @@ main {
     margin-bottom: 0.5rem;
 }
 
-.segunda-secao p {
+.segunda-secao p{
     color: var(--silver);
     font-size: 0.9375rem;
     line-height: 1.625rem;
 }
 
-.terceira-secao > div {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
+.terceira-secao > div{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .terceira-secao img {
-    max-width: 6.25rem;
+   max-width: 6.75rem;
 }
 
-.terceira-secao strong {
+.terceira-secao strong{
     color: var(--silver);
     font-size: 2rem;
     line-height: 100%;
 }
 
-.terceira-secao h2 {
-    color: var(--dark-space-blue);
+.terceira-secao h2{
+    color: var(--dark-blue);
     font-size: 1.125rem;
     font-weight: 800;
     line-height: 1.5rem;
     margin-block: 0.6rem;
 }
 
-.terceira-secao a {
+.terceira-secao a{
     text-decoration: none;
 }
 
-.terceira-secao p {
+.terceira-secao p{
     font-size: 0.9375rem;
     line-height: 1.625rem;
     color: var(--gunmetal);
 }
 
-@media(min-width: 1110px) {
-
-    header > button {
+@media(min-width: 1110px){
+    header > button{
         display: none;
     }
 
-    header .desktop {
+    header .desktop{
         display: flex;
         gap: 2.5rem;
     }
 
-
-    header .desktop a {
+    header .desktop a{
         font-size: 0.9375rem;
         line-height: 1.625rem;
         text-decoration: none;
         color: var(--gunmetal);
     }
 
-    header .desktop a:hover {
-        color: var(--light-vermillion);
+    header .desktop a:hover{
+        color: var(--vermilion);
     }
-
-    main {
+    
+     main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.75rem;
     }
 
-    .primeira-secao {
-        grid-column: 1/3;
+    .primeira-secao{
+        grid-column: 1 / 3;
+
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1.75rem;
     }
 
-    .primeira-secao picture {
-        grid-column: 1/3;
+    .primeira-secao picture{
+        grid-column: 1 / 3;
     }
-
-    .primeira-secao img {
+    
+    .primeira-secao img{
         margin: 0;
     }
 
-    .primeira-secao h1 {
+    .primeira-secao h1{
         font-size: 3.5rem;
     }
 
-    .primeira-secao button:hover {
-        background: var(--dark-space-blue);
-        cursor: pointer;
+    .primeira-secao button:hover{
+        background-color: var(--dark-blue);
     }
 
-    .segunda-secao h2 {
+    .segunda-secao h2{
         font-size: 2.5rem;
     }
 
-    .terceira-secao {
+    .terceira-secao{
         display: flex;
-        grid-column: 1/4;
+        grid-column: 1 / 4;
     }
 
-    .terceira-secao h2:hover {
-        color: var(--light-vermillion);
+    .terceira-secao h2:hover{
+        color: var(--vermilion);
     }
 
 }
